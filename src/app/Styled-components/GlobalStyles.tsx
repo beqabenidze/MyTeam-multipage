@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
         font-family: 'Ubuntu', sans-serif;
     }
     body{
-        background-color: ${(props) => props.theme.background};
+        background-color: #014E56;
         width: 100%;
         height: 100vh;
         overflow-y: hidden;

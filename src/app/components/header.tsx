@@ -2,12 +2,16 @@ import React from "react";
 import styled from "styled-components";
 
 function Header() {
-  return <div></div>;
+  return (
+    <Button>
+      <div>awdawdawdsssssssssssss</div>
+    </Button>
+  );
 }
 
 export default Header;
 
-const Button = styled.button`
+const Button = styled.div`
   background-color: #f44336;
   color: #fff;
   padding: 8px 16px;
