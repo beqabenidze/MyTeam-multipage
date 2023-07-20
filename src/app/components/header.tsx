@@ -1,22 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
+import Context from "../page";
 
 function Header() {
+  const { size } = useContext(Context);
+
+  console.log(size);
+
   return (
-    <Button>
-      <div>awdawdawdsssssssssssss</div>
-    </Button>
+    <HeaderWrapper>
+      <img src="/logo.svg" />
+      <img src="/icon-hamburger.svg" />
+    </HeaderWrapper>
   );
 }
 
 export default Header;
 
-const Button = styled.div`
+const HeaderWrapper = styled.div`
+  width: 100%;
+  height: fit-content;
   background-color: #f44336;
-  color: #fff;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;

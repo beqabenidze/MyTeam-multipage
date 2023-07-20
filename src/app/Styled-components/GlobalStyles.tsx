@@ -10,13 +10,12 @@ const GlobalStyles = createGlobalStyle`
     body{
         background-color: #014E56;
         width: 100%;
-        height: 100vh;
+        min-height: 100vh;
         overflow-y: hidden;
         display: flex;
         justify-content: center;
-        @media (min-width: 1000px){
-            padding: 50px;
-        }
+        padding: 40px 20px;
+        
     }
     
     
