@@ -3,13 +3,10 @@ import styled from "styled-components";
 import Context from "../page";
 
 function Header() {
-  const { size } = useContext(Context);
-
-  console.log(size);
-
   return (
     <HeaderWrapper>
       <img src="/logo.svg" />
+      <div></div>
       <img src="/icon-hamburger.svg" />
     </HeaderWrapper>
   );
