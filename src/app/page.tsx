@@ -2,8 +2,7 @@
 import { useState, useEffect, createContext } from "react";
 import GlobalStyles from "./Styled-components/GlobalStyles";
 import { Helmet } from "react-helmet";
-import Header from "./components/header";
-
+import Home from "../../pages/Home";
 export const Context = createContext<any>(null);
 
 function App() {
@@ -14,6 +13,9 @@ function App() {
         : "tablet"
       : "mobile"
   );
+  const [menu, setmenu] = useState(false);
+
+  console.log(size);
 
   useEffect(() => {
     const handleSize = () => {
@@ -34,7 +36,7 @@ function App() {
   }, [size]);
 
   return (
-    <Context.Provider value={{ size, setSize }}>
+    <Context.Provider value={{ size, setSize, menu, setmenu }}>
       <GlobalStyles />
       <Helmet>
         <link
@@ -42,7 +44,7 @@ function App() {
           rel="stylesheet"
         />
       </Helmet>
-      <Header />
+      <Home />
     </Context.Provider>
   );
 }

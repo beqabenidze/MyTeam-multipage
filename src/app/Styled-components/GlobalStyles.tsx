@@ -4,18 +4,17 @@ const GlobalStyles = createGlobalStyle`
     *{
         margin: 0;
         padding: 0;
-        box-sizing:border-box;
+        box-sizing: border-box;
         font-family: 'Ubuntu', sans-serif;
     }
     body{
         background-color: #014E56;
-        width: 100%;
+        width: 100vw;
         min-height: 100vh;
         overflow-y: hidden;
         display: flex;
         justify-content: center;
         padding: 40px 20px;
-        
     }
     
     
