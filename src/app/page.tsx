@@ -13,9 +13,7 @@ function App() {
         : "tablet"
       : "mobile"
   );
-  const [menu, setmenu] = useState(false);
-
-  console.log(size);
+  const [menu, setMenu] = useState<boolean>(false);
 
   useEffect(() => {
     const handleSize = () => {
@@ -36,11 +34,11 @@ function App() {
   }, [size]);
 
   return (
-    <Context.Provider value={{ size, setSize, menu, setmenu }}>
+    <Context.Provider value={{ size, setSize, menu, setMenu }}>
       <GlobalStyles />
       <Helmet>
         <link
-          href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Livvic:wght@600&display=swap"
           rel="stylesheet"
         />
       </Helmet>
