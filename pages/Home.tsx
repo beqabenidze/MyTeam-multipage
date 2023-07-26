@@ -17,6 +17,7 @@ const Home = () => {
           hard. Most companies aren’t tapping into the abundance of global
           talent. We’re about to change that.
         </p>
+        <img src="/bg-pattern-home-2.svg"></img>
       </BodyWrapper>
     </>
   );
