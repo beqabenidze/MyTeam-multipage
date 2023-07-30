@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { Context } from "../page";
-import close from "/avatar-aden.png";
 
 function Menu() {
   const { menu, setMenu, size } = useContext(Context);
@@ -12,13 +11,12 @@ function Menu() {
         display: size != "mobile" ? "none" : "block",
       }}
     >
-      <p
+      <img
+        src="/icon-close.svg"
         onClick={() => {
           setMenu(false);
         }}
-      >
-        awdaw
-      </p>
+      />
       <div>
         <h2>home</h2>
         <h2>about</h2>
@@ -39,8 +37,11 @@ const MenuWrapper = styled.div`
   transition: all 1s ease;
   color: white;
   background-color: #2c6269;
-  p {
-    text-align: right;
+  text-align: initial;
+  img {
+    align-self: right;
+    position: absolute;
+    right: 40px;
   }
   div {
     margin-top: 60px;
@@ -53,5 +54,6 @@ const MenuWrapper = styled.div`
     border-radius: 20px;
     padding: 10px 20px;
     border: 1px solid white;
+    text-align: center;
   }
 `;
