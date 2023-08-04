@@ -19,11 +19,32 @@ const Home = () => {
         </p>
         <img src="/bg-pattern-home-2.svg"></img>
         <SkillWrapper>
-          <img src="/bg-pattern-home-3.svg"></img>
+          {/* <img src="/bg-pattern-home-3.svg"></img> */}
           <h2>Build & manage distributed teams like no one else.</h2>
           <div>
             <aside>
-              <img src="/"></img>
+              <img src="/icon-person.svg"></img>
+              <h3>Experienced Individuals</h3>
+              <p>
+                Our network is made up of highly experienced professionals who
+                are passionate about what they do.
+              </p>
+            </aside>
+            <aside>
+              <img src="/icon-cog.svg"></img>
+              <h3>Easy to Implement</h3>
+              <p>
+                Our processes have been refined over years of implementation
+                meaning our teams always deliver.
+              </p>
+            </aside>
+            <aside>
+              <img src="/icon-chart.svg"></img>
+              <h3>Enhanced Productivity</h3>
+              <p>
+                Our customized platform with in-built analytics helps you manage
+                your distributed teams.
+              </p>
             </aside>
           </div>
         </SkillWrapper>
@@ -52,18 +73,11 @@ const BodyWrapper = styled.div`
 
 const SkillWrapper = styled.div`
   width: 100%;
-  background-color: red;
   position: relative;
   color: white;
   text-align: initial;
-
   h2 {
-    max-width: 300px;
-  }
-  img {
-    width: 50%;
-    position: absolute;
-    right: -140px;
+    max-width: 200px;
   }
   div {
     width: 100%;
@@ -71,5 +85,15 @@ const SkillWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 60px;
+  }
+  aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  h3 {
+    color: #f67e7e;
   }
 `;
